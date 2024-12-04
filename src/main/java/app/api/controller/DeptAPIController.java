@@ -28,6 +28,12 @@ public class DeptAPIController {
 		return "dept api controller";
 	}
 	
+	@GetMapping("/app")
+	public String deptApp() {
+		return "dept api app";
+	}
+	
+	
 	@GetMapping("/depts")
 	public List<Dept> getDepts() {
 		List<Dept> depts = deptService.getDepts();
